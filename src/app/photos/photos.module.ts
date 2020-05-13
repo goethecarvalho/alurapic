@@ -11,7 +11,8 @@ import { PhotosComponent } from './photo-list/photos/photos.component';
     declarations:[
         PhotoComponent, 
         PhotoListComponent, 
-        PhotoFormComponent, PhotosComponent
+        PhotoFormComponent, 
+        PhotosComponent
     ],
     imports:[ 
         HttpClientModule,
