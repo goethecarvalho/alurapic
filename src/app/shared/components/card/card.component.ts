@@ -4,7 +4,6 @@ import { Component, Input } from '@angular/core';
     selector: 'ap-card',
     templateUrl: './card.component.html'
 })
-
-export class CardComponent{
+export class CardComponent { 
     @Input() title: string = '';
 }

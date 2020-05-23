@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
         CommonModule,
         HttpClientModule
     ],
-    exports: [PhotoComponent]
+    exports: [ PhotoComponent ]
 })
-
 export class PhotoModule { }

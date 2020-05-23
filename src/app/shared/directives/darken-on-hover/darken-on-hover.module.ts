@@ -5,5 +5,4 @@ import { DarkenOnHoverDirective } from './darken-on-hover.directive';
     declarations: [DarkenOnHoverDirective],
     exports:[DarkenOnHoverDirective]
 })
-
 export class DarkenOnHoverModule { }

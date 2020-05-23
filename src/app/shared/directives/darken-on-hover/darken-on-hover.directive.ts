@@ -3,13 +3,12 @@ import { Directive, ElementRef, HostListener, Renderer, Input } from '@angular/c
 @Directive({
     selector: '[apDarkenOnHover]'
 })
-
-export class DarkenOnHoverDirective{
+export class DarkenOnHoverDirective { 
 
     @Input() brightness = '70%';
 
     constructor(
-        private el: ElementRef, 
+        private el: ElementRef,
         private render: Renderer
     ) {}
 

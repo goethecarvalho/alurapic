@@ -6,7 +6,6 @@ import { debounceTime } from 'rxjs/operators';
   selector: 'ap-search',
   templateUrl: './search.component.html'
 })
-
 export class SearchComponent implements OnInit, OnDestroy {
   
   @Output() onTyping = new EventEmitter<string>();
