@@ -1,4 +1,3 @@
-<h1 style="background-color: red;" apDarkenOnHover brightness="20%"></h1>
 <ap-search 
     (onTyping)="filter = $event" [value]="filter">
 </ap-search>
@@ -7,7 +6,7 @@
     [photos]="photos | filterByDescription: filter">
 </ap-photos>
 
-<ap-load-button
-    (click)="load()"
+<ap-load-button 
+    (click)="load()" 
     [hasMore]="hasMore">
 </ap-load-button>

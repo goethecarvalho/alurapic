@@ -16,7 +16,7 @@ export class UserNotTakenValidatorService {
                 .valueChanges
                 .pipe(debounceTime(300))
                 .pipe(switchMap(userName => 
-                    this.signUpService.checkUserNameTaken(userName)
+                        this.signUpService.checkUserNameTaken(userName)
                 ))
                 .pipe(map(isTaken => isTaken ? { userNameTaken: true } : null))
                 .pipe(tap(r => console.log(r)))

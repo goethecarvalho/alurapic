@@ -13,8 +13,9 @@ export class HeaderComponent {
     user$: Observable<User>;
 
     constructor(
-        private userService: UserService,
-        private router:Router){
+        private userService: UserService, 
+        private router:Router) {
+
         this.user$ = userService.getUser();
     }
 
