@@ -38,7 +38,7 @@ export class PhotoService {
             API + '/photos/upload', 
             formData,
             {
-                observe: 'events', 
+                observe: 'events',
                 reportProgress: true
             }
         );
