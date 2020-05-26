@@ -34,7 +34,7 @@ const routes: Routes = [
         component: PhotoFormComponent,
         canActivate: [AuthGuard],
         data: {
-            title: 'Photo Upload'
+            title: 'Photo upload'
         }
     },
     { 

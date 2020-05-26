@@ -7,6 +7,11 @@ import { RequestInterceptor } from './auth/request.interceptor';
 import { FooterComponent } from './footer/footer.component';
 import { AlertModule } from '../shared/components/alert/alert.module';
 
+import { MenuModule } from '../shared/components/menu/menu.module';
+import { ShowIfLoggedDirective } from '../shared/directives/show-if-logged/show-if-logged.directive';
+import { ShowIfLoggedModule } from '../shared/directives/show-if-logged/show-if-logged.module';
+import { LoadingModule } from '../shared/components/loading/loading.module';
+
 @NgModule({
     declarations: [
         HeaderComponent,
@@ -19,7 +24,10 @@ import { AlertModule } from '../shared/components/alert/alert.module';
     imports: [
         CommonModule,
         RouterModule,
-        AlertModule
+        AlertModule,
+        LoadingModule,
+        MenuModule,
+        ShowIfLoggedModule
     ],
     providers: [
         {
